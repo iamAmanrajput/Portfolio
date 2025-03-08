@@ -57,7 +57,7 @@ export function Hero() {
 
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse" />
             <img
-              src="/assets/profile.jpg"
+              src="https://t4.ftcdn.net/jpg/10/40/57/07/240_F_1040570704_LONHhjfyTkGzI1Fdq4ZUWSoFu2Hv1H7U.jpg"
               alt="Deepak Modi"
               className="relative w-full max-w-lg mx-auto rounded-full shadow-2xl transform hover:scale-105 transition-transform duration-500"
             />

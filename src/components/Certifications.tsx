@@ -7,12 +7,11 @@ import "slick-carousel/slick/slick-theme.css";
 
 const certifications = [
   {
-    title: "Python 3 Ultimate Guide",
-    issuer: "Udemy",
-    date: "Oct 2023",
-    link: "https://www.udemy.com/certificate/UC-35cedd32-ccc1-4377-b9ef-e8fabda1f457/",
-    image:
-      "https://udemy-certificate.s3.amazonaws.com/image/UC-35cedd32-ccc1-4377-b9ef-e8fabda1f457.jpg?v=1697713760000",
+    title: "Full Stack Development",
+    issuer: "CodSoft",
+    date: "Nov 2024",
+    link: "https://drive.google.com/file/d/1VuQPScKW2LGWZISzja-iZIqanAEn6uKc/view?pli=1",
+    image: "../assets/CodSoft Internship-1.png",
   },
 ];
 

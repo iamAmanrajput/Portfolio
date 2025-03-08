@@ -6,17 +6,17 @@ const education = [
   {
     degree: "Bachelor of Technology (B.Tech)",
     institution: "Maharshi Dayanand University, Rohtak",
-    period: "2021 - 2025",
+    period: "2022 - 2026",
   },
   {
     degree: "Senior Secondary (XII)",
     institution: "Govt. Boys Sr. Sec. School, Delhi",
-    period: "2019 - 2021",
+    period: "2021 - 2022",
   },
   {
     degree: "Secondary (X)",
     institution: "Akash Model Sr. Sec. School, Delhi",
-    period: "2017 - 2019",
+    period: "2020 - 2021",
   },
 ];
 
