@@ -1,6 +1,6 @@
 # Aman - Portfolio Website for a Full Stack Developer
 
-Welcome to **My Portfolio**! This is my personal portfolio for showcasing my skills, projects, experience, education, certifications, and more. It's built using React, TypeScript, Tailwind CSS, and other modern web technologies. It fetches data from various APIs to display the latest information, such as GitHub repositories, LeetCode submissions, and blogs. The portfolio is responsive, interactive, and optimized for performance.
+Welcome to **My Portfolio**! This is my personal portfolio for showcasing my skills, projects, experience, education, certifications, and more. It's built using React, TypeScript, Tailwind CSS, and other modern web technologies. It fetches data from various APIs to display the latest information, such as GitHub repositories and LeetCode submissions. The portfolio is responsive, interactive, and optimized for performance.
 
 Check it out live at: [https://aman-portfolio.vercel.app/](https://aman-portfolio.vercel.app/)
 
@@ -10,7 +10,7 @@ Check it out live at: [https://aman-portfolio.vercel.app/](https://aman-portfoli
 
 - **Responsive Design**: The portfolio adjusts to all screen sizes, ensuring an optimal experience on both desktop and mobile devices.
 - **Smooth Animations**: Interactive elements, hover effects, and smooth scrolling give the user a pleasant experience.
-- **Dynamic Content**: Fetches data from various APIs to display the latest information, such as GitHub repositories, LeetCode submissions, and blogs.
+- **Dynamic Content**: Fetches data from various APIs to display the latest information, such as GitHub repositories and LeetCode submissions.
 - **Interactive Icons**: Utilizes Lucide icons for a modern and interactive design.
 - **SVG Signature Animation**: Framer-Motion is used to animate the SVG signature on the loading page.
 - **Dark Mode**: Built with dark mode support using a simple toggle to switch between light and dark themes.
@@ -21,8 +21,6 @@ Check it out live at: [https://aman-portfolio.vercel.app/](https://aman-portfoli
   - **Projects**: Showcase of personal and professional projects.
   - **GitHub**: Fetches and displays my GitHub repositories with a link to view the profile.
   - **LeetCode**: Fetches and displays my LeetCode submissions.
-  - **Badges**: Displays badges from various platforms like GitHub, LeetCode, and HackerRank.
-  - **Blogs**: Fetches and displays my blogs from Hashnode API.
   - **Experience**: Details about my work experience with a timeline layout.
   - **Education**: My academic journey including degree and institution.
   - **Certifications**: Certificates and courses completed with a link to verify.
@@ -56,8 +54,6 @@ Check it out live at: [https://aman-portfolio.vercel.app/](https://aman-portfoli
         ├── vite-env.d.ts
         ├── components/
         │   ├── About.tsx
-        │   ├── Badges.tsx
-        │   ├── Blogs.tsx
         │   ├── Certifications.tsx
         │   ├── Contact.tsx
         │   ├── Education.tsx
@@ -80,7 +76,6 @@ Check it out live at: [https://aman-portfolio.vercel.app/](https://aman-portfoli
         │   │   └── svgPaths.ts
         │   └── ui/
         │       ├── AboutCard.tsx
-        │       ├── BlogCard.tsx
         │       ├── CertificationCard.tsx
         │       ├── ContactForm.tsx
         │       ├── CustomCursor.tsx
@@ -92,7 +87,6 @@ Check it out live at: [https://aman-portfolio.vercel.app/](https://aman-portfoli
         │       └── TypeWriter.tsx
         └── hooks/
             ├── useAnimatedLogo.ts
-            ├── useBlogs.ts
             ├── useLoading.ts
             └── useTheme.ts
 ```
@@ -107,7 +101,6 @@ Check it out live at: [https://aman-portfolio.vercel.app/](https://aman-portfoli
 - **Lucide Icons**: Used for interactive and sleek icons.
 - **Vercel**: For fast deployment and hosting.
 - **GitHub API**: To fetch and display repositories.
-- **Hashnode API**: To fetch and display latest blogs.
 - **Framer-Motion**: For svg signature loading animation.
 
 ---
@@ -130,7 +123,7 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 Feel free to reach out to me through any of the following channels:
 
-- **Email**: [aman.it360@gmail.com](mailto:your-email@example.com)
+- **Email**: [aman.it360@gmail.com](mailto:aman.it360@gmail.com)
 - **LinkedIn**: [linkedin.com/in/aman](https://linkedin.com/in/aman)
 - **Website**: [aman-portfolio.vercel.app](https://aman-portfolio.vercel.app)
 
