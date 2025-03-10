@@ -1,5 +1,5 @@
-import React from 'react';
-import { ExternalLink, Github } from 'lucide-react';
+import React from "react";
+import { ExternalLink, Github } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
@@ -9,7 +9,13 @@ interface ProjectCardProps {
   tags: string[];
 }
 
-export function ProjectCard({ title, description, image, link, tags }: ProjectCardProps) {
+export function ProjectCard({
+  title,
+  description,
+  image,
+  link,
+  tags,
+}: ProjectCardProps) {
   return (
     <div className="relative group">
       {/* Gradient Background Glow */}
@@ -36,7 +42,7 @@ export function ProjectCard({ title, description, image, link, tags }: ProjectCa
             </a>
             {/* GitHub Link */}
             <a
-              href={`https://github.com/deepakmodi/${title.toLowerCase()}`}
+              href={`https://github.com/iamAmanrajput/${title.toLowerCase()}`}
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white/20 rounded-full hover:bg-gray-900 hover:scale-110 transition-transform duration-300 ease-in-out shadow-lg"
@@ -48,7 +54,9 @@ export function ProjectCard({ title, description, image, link, tags }: ProjectCa
 
         {/* Content Section */}
         <div className="p-6">
-          <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">{title}</h3>
+          <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
+            {title}
+          </h3>
           <p className="text-gray-600 dark:text-gray-400 mb-4">{description}</p>
           <div className="flex flex-wrap gap-2">
             {tags.map((tag) => (

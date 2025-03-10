@@ -19,7 +19,7 @@ const projects = [
     tags: ["React", "Node.js", "MongoDB"],
   },
   {
-    title: "Password Manager",
+    title: "Password-Manager",
     description: "Store and manage your passwords in a secure way",
     image: "/assets/PassManager.png",
     link: "https://pass-op-aman.vercel.app/",
@@ -28,8 +28,8 @@ const projects = [
   {
     title: "Portfolio",
     description: "Personal portfolio website showcasing projects and skills",
-    image: "/assets/PassManager.png",
-    link: "https://github.com/iamAmanrajput/Portfolio",
+    image: "/assets/Portfolio.png",
+    link: "https://aman-rajput.vercel.app/",
     tags: ["React", "Tailwind CSS", "TypeScript"],
   },
 ];
