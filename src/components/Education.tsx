@@ -5,7 +5,7 @@ import { EducationCard } from "./ui/EducationCard";
 const education = [
   {
     degree: "Bachelor of Technology (B.Tech)",
-    institution: "Maharshi Dayanand University, Rohtak",
+    institution: "PDM University, Haryana",
     period: "2022 - 2026",
   },
   {
