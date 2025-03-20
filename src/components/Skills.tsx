@@ -12,7 +12,10 @@ import {
   SiGit,
   SiGithub,
   SiVite,
+  SiRedux,
   SiBootstrap,
+  SiPostman,
+  SiVercel,
 } from "react-icons/si";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
@@ -24,17 +27,21 @@ const skills = [
   { name: "JavaScript", icon: SiJavascript, color: "#f7df1e" },
   { name: "TypeScript", icon: SiTypescript, color: "#3178c6" },
   { name: "React", icon: FaReact, color: "#61dafb" },
+  { name: "Redux", icon: SiRedux, color: "#764ABC" },
   { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38bdf8" },
   { name: "Node.js", icon: FaNodeJs, color: "#68a063" },
-  { name: "Express.js", icon: SiExpress, color: "" },
+  { name: "Express.js", icon: SiExpress, color: "#68a063" },
   { name: "MongoDB", icon: SiMongodb, color: "#47a248" },
-  { name: "Next.js", icon: SiNextdotjs, color: "" },
+  { name: "Next.js", icon: SiNextdotjs, color: "#FFFFFF" },
   { name: "C++", icon: SiCplusplus, color: "#00599c" },
-  { name: "Bootstrap", icon: SiBootstrap, color: "#563d7c" },
+  { name: "Bootstrap", icon: SiBootstrap, color: "#563D7C" },
   { name: "VS Code", icon: VscVscode, color: "#007acc" },
   { name: "Vite", icon: SiVite, color: "#646cff" },
   { name: "Git", icon: SiGit, color: "#f34f29" },
-  { name: "GitHub", icon: SiGithub, color: "" },
+  { name: "GitHub", icon: SiGithub, color: "#FFFFFF" },
+  { name: "Postman", icon: SiPostman, color: "#FF6C37" },
+  { name: "Vite", icon: SiVite, color: "#646CFF" },
+  { name: "Vercel", icon: SiVercel, color: "#FFFFFF" },
 ];
 
 export function Skills() {

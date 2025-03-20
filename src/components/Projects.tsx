@@ -8,7 +8,7 @@ const projects = [
     description:
       "Mern Stack Ecommerce Website With Payment Gateway and Admin Panel",
     image: "/assets/NeoMart.png",
-    link: "https://github.com/iamAmanrajput/NeoMart",
+    link: "https://neomarts.vercel.app/",
     tags: ["React", "Node.js", "MongoDB"],
   },
   {
