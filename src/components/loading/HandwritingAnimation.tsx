@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 
 export function HandwritingAnimation() {
   const [animationCompleted, setAnimationCompleted] = useState(false);
-
-  // Text to animate
   const text = "Aman Kumar";
 
   return (
@@ -32,7 +30,7 @@ export function HandwritingAnimation() {
             animate={{
               opacity: 1,
               y: 0,
-              rotate: char !== " " ? Math.random() * 6 - 3 : 0, // Random slight rotation for each character
+              rotate: char !== " " ? Math.random() * 6 - 3 : 0,
             }}
             transition={{
               duration: 0.7,
@@ -44,20 +42,15 @@ export function HandwritingAnimation() {
                 setAnimationCompleted(true);
               }
             }}
-            className="inline-block"
+            className="inline-block text-5xl sm:text-8xl"
             style={{
               fontFamily: "'Brush Script MT', cursive",
-              fontSize:
-                char !== " " ? `${Math.random() * 0.5 + 4.5}rem` : "4.5rem", // Slightly varied font sizes
               color: animationCompleted
                 ? "rgb(59, 130, 246)"
                 : "rgb(31, 41, 55)",
               filter: animationCompleted
                 ? "drop-shadow(0 0 8px rgba(59, 130, 246, 0.3))"
                 : "none",
-              transform: `translateY(${
-                char !== " " ? Math.random() * 6 - 3 : 0
-              }px)`, // Random slight vertical offset
               fontWeight: "normal",
               textShadow: animationCompleted
                 ? "2px 2px 4px rgba(0,0,0,0.1)"
