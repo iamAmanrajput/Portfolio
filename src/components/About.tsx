@@ -60,7 +60,7 @@ export function About() {
         <div className="max-w-5xl mx-auto mb-16 text-center">
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
             Hey there! 👋 I'm{" "}
-            <span className="text-blue-600 font-semibold">Aman Kumar</span>, a I
+            <span className="text-blue-600 font-semibold">Aman Kumar</span>, I
             am a MERN Stack Developer and a problem solver. Currently, I am in
             the 6th semester of my Computer Science Engineering degree. I love
             exploring new technologies and building impactful solutions.I enjoy
