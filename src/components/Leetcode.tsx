@@ -11,7 +11,7 @@ export function Leetcode() {
           {/* Leetcode Activity Image */}
           <div className="relative w-full h-[25rem] overflow-hidden">
             <iframe
-              src="https://leetcard.jacoblin.cool/user5486Lf?theme=dark&font=Inter&ext=activity&border=2&radius=10"
+              src="https://leetcard.jacoblin.cool/JaaniRajput?theme=dark&font=Inter&ext=activity&border=2&radius=10"
               title="Leetcode Activity"
               className="absolute w-full h-full shadow-md"
             ></iframe>
