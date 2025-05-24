@@ -16,7 +16,7 @@ const education = [
   {
     degree: "Secondary (X)",
     institution: "Akash Model Sr. Sec. School, Delhi",
-    period: "2020 - 2021",
+    period: "2019 - 2020",
   },
 ];
 

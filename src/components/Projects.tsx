@@ -12,8 +12,22 @@ const projects = [
     tags: ["React", "Node.js", "MongoDB"],
   },
   {
+    title: "ZapChat",
+    description: "Real-time chat app with MERN stack, dark UI, and WebSockets.",
+    image: "/assets/ZapChat.png",
+    link: "https://zapchats.vercel.app/",
+    tags: ["React", "Tailwind CSS", "Node.js", "MongoDB", "websockets"],
+  },
+  {
+    title: "Portfolio",
+    description: "Personal portfolio website showcasing projects and skills",
+    image: "/assets/Portfolio.png",
+    link: "https://aman-rajput.vercel.app/",
+    tags: ["React", "Tailwind CSS", "TypeScript", "Framer Motion"],
+  },
+  {
     title: "CourseNest",
-    description: "Mern Stack Course Buying/Selling Website",
+    description: "Mern Stack Course Buying and Selling Website",
     image: "/assets/CourseNest.png",
     link: "https://coursenest.vercel.app/",
     tags: ["React", "Node.js", "MongoDB"],
@@ -24,13 +38,6 @@ const projects = [
     image: "/assets/PassManager.png",
     link: "https://pass-op-aman.vercel.app/",
     tags: ["React", "Tailwind CSS", "MongoDB"],
-  },
-  {
-    title: "Portfolio",
-    description: "Personal portfolio website showcasing projects and skills",
-    image: "/assets/Portfolio.png",
-    link: "https://aman-rajput.vercel.app/",
-    tags: ["React", "Tailwind CSS", "TypeScript"],
   },
 ];
 

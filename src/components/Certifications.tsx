@@ -7,6 +7,13 @@ import "slick-carousel/slick/slick-theme.css";
 
 const certifications = [
   {
+    title: "Web Development",
+    issuer: "Sololearn",
+    date: "May 2025",
+    link: "https://www.linkedin.com/posts/aman-kumar-910843327_webdevelopment-mernstack-techjourney-activity-7329895050031603713-M2qD/",
+    image: "../assets/Web-Development.jpg",
+  },
+  {
     title: "Full Stack Development",
     issuer: "CodSoft",
     date: "Nov 2024",
