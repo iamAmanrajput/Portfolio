@@ -62,7 +62,7 @@ export function About() {
             Hey there! 👋 I'm{" "}
             <span className="text-blue-600 font-semibold">Aman Kumar</span>, I
             am a MERN Stack Developer and a problem solver. Currently, I am in
-            the 6th semester of my Computer Science Engineering degree. I love
+            the 7th semester of my Computer Science Engineering degree. I love
             exploring new technologies and building impactful solutions.I enjoy
             turning ideas into scalable web applications and tackling complex
             coding problems.

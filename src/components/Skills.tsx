@@ -32,16 +32,15 @@ const skills = [
   { name: "Node.js", icon: FaNodeJs, color: "#68a063" },
   { name: "Express.js", icon: SiExpress, color: "#68a063" },
   { name: "MongoDB", icon: SiMongodb, color: "#47a248" },
-  { name: "Next.js", icon: SiNextdotjs, color: "#FFFFFF" },
+  { name: "Next.js", icon: SiNextdotjs, color: "#f0f0f0" },
   { name: "C++", icon: SiCplusplus, color: "#00599c" },
   { name: "Bootstrap", icon: SiBootstrap, color: "#563D7C" },
   { name: "VS Code", icon: VscVscode, color: "#007acc" },
   { name: "Vite", icon: SiVite, color: "#646cff" },
   { name: "Git", icon: SiGit, color: "#f34f29" },
-  { name: "GitHub", icon: SiGithub, color: "#FFFFFF" },
+  { name: "GitHub", icon: SiGithub, color: "#f0f0f0" },
   { name: "Postman", icon: SiPostman, color: "#FF6C37" },
-  { name: "Vite", icon: SiVite, color: "#646CFF" },
-  { name: "Vercel", icon: SiVercel, color: "#FFFFFF" },
+  { name: "Vercel", icon: SiVercel, color: "#f0f0f0" },
 ];
 
 export function Skills() {
