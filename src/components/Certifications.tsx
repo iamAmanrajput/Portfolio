@@ -7,6 +7,13 @@ import "slick-carousel/slick/slick-theme.css";
 
 const certifications = [
   {
+    title: "Python Technology",
+    issuer: "Deloitte",
+    date: "June 2025",
+    link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_uxY2kuKExpQ3uBYPL_1750766164494_completion_certificate.pdf",
+    image: "../assets/python.jpg",
+  },
+  {
     title: "Web Development",
     issuer: "Sololearn",
     date: "May 2025",

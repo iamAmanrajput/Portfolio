@@ -4,12 +4,20 @@ import { ProjectCard } from "./ui/ProjectCard";
 
 const projects = [
   {
+    title: "BooksNest",
+    description:
+      "MERN-based Library Portal with Book Management, Fine System, and Queue Handling.",
+    image: "/assets/booksnest.png",
+    link: "https://booksnests.vercel.app/",
+    tags: ["React", "Node.js", "Express", "MongoDB"],
+  },
+  {
     title: "NeoMart",
     description:
       "Mern Stack Ecommerce Website With Payment Gateway and Admin Panel",
     image: "/assets/NeoMart.png",
     link: "https://neomarts.vercel.app/",
-    tags: ["React", "Node.js", "MongoDB"],
+    tags: ["React", "Node.js", "Express", "MongoDB"],
   },
   {
     title: "ZapChat",
