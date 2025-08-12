@@ -1,6 +1,6 @@
-import React from "react";
 import Slider from "react-slick";
 import { SectionTitle } from "./ui/SectionTitle";
+import { SectionBackground } from "./ui/SectionBackground";
 import { CertificationCard } from "./ui/CertificationCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -34,32 +34,34 @@ export function Certifications() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
     pauseOnHover: true,
-    adaptiveHeight: true,
-    centerMode: true,
-    centerPadding: "0px",
+
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 1 } },
+      { breakpoint: 1024, settings: { slidesToShow: 2 } },
       { breakpoint: 768, settings: { slidesToShow: 1 } },
     ],
   };
 
   return (
-    <section id="certifications" className="py-20 bg-gray-50 dark:bg-gray-800">
-      <div className="container mx-auto px-8 max-w-lg">
-        <SectionTitle>Certifications</SectionTitle>
-        <Slider {...settings} className="w-full">
-          {certifications.map((cert) => (
-            <div key={cert.title} className="px-4">
-              <CertificationCard {...cert} />
-            </div>
-          ))}
-        </Slider>
-      </div>
-    </section>
+    <SectionBackground>
+      <section id="certifications">
+        <div className="container mx-auto px-8">
+          <SectionTitle subtitle="Some courses I actually completed instead of just bookmarking them - fancy certificates!">
+            Certifications
+          </SectionTitle>
+          <Slider {...settings} className="max-w-6xl mx-auto">
+            {certifications.map((cert) => (
+              <div key={cert.title} className="px-4">
+                <CertificationCard {...cert} />
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </section>
+    </SectionBackground>
   );
 }

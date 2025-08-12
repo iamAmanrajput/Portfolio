@@ -1,5 +1,5 @@
-import React from "react";
 import { SectionTitle } from "./ui/SectionTitle";
+import { SectionBackground } from "./ui/SectionBackground";
 import { EducationCard } from "./ui/EducationCard";
 
 const education = [
@@ -22,15 +22,23 @@ const education = [
 
 export function Education() {
   return (
-    <section id="education" className="py-20">
-      <div className="container mx-auto px-8">
-        <SectionTitle>Education</SectionTitle>
-        <div className="max-w-4xl mx-auto space-y-6">
-          {education.map((edu) => (
-            <EducationCard key={edu.degree} {...edu} />
-          ))}
+    <SectionBackground>
+      <section id="education">
+        <div className="container mx-auto px-8">
+          <SectionTitle subtitle="Where I learned theory and then forgot half of it while learning to actually code 😅">
+            Education
+          </SectionTitle>
+          <div className="max-w-5xl mx-auto space-y-10">
+            {education.map((edu, index) => (
+              <EducationCard
+                key={edu.degree}
+                {...edu}
+                isLast={index === education.length - 1}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </SectionBackground>
   );
 }
