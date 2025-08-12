@@ -1,42 +1,59 @@
-import React from "react";
 import { SectionTitle } from "./ui/SectionTitle";
+import { SectionBackground } from "./ui/SectionBackground";
+import { SiLeetcode } from "react-icons/si";
 
 export function Leetcode() {
   return (
-    <section id="leetcode" className="py-20 bg-gray-50 dark:bg-gray-800">
-      <div className="container mx-auto max-w-6xl px-8">
-        <SectionTitle>Leetcode Progress</SectionTitle>
+    <SectionBackground>
+      <section id="leetcode">
+        <div className="container mx-auto max-w-6xl px-8">
+          <SectionTitle subtitle="Between classes and coding, I somehow manage to solve some DSA problems">
+            Leetcode Progress
+          </SectionTitle>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          {/* Leetcode Activity Image */}
-          <div className="relative w-full h-[25rem] overflow-hidden">
-            <iframe
-              src="https://leetcard.jacoblin.cool/JaaniRajput?theme=dark&font=Inter&ext=activity&border=2&radius=10"
-              title="Leetcode Activity"
-              className="absolute w-full h-full shadow-md"
-            ></iframe>
-          </div>
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Leetcode Activity Image */}
+            <div className="relative w-full h-[18rem] md:h-[25rem] overflow-hidden">
+              <img
+                src="https://leetcard.jacoblin.cool/JaaniRajput?theme=dark&font=Inter&ext=activity&border=2&radius=10"
+                title="Leetcode Activity"
+                className="absolute w-full h-full rounded-xl shadow-md"
+              ></img>
+            </div>
 
-          {/* Leetcode Journey Text */}
-          <div>
-            <h3 className=" text-center text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4">
-              My Leetcode Journey
-            </h3>
-            <p className=" text-center text-lg text-gray-600 dark:text-gray-300 mb-4">
-              Solving problems on Leetcode has helped me strengthen my Data
-              Structures and Algorithms skills. I enjoy tackling challenges that
-              push my problem-solving abilities and prepare me for technical
-              interviews.
-            </p>
-            <p className=" text-center text-lg text-gray-600 dark:text-gray-300">
-              I've completed hundreds of problems across a variety of topics,
-              including arrays, trees, graphs, and dynamic programming. My goal
-              is to keep improving and stay consistent in learning and solving
-              new problems daily.
-            </p>
+            {/* Leetcode Journey Text */}
+            <div>
+              <h3 className=" text-center text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4">
+                My LeetCode Grind
+              </h3>
+              <p className="text-center text-lg text-gray-600 dark:text-gray-300 mb-4">
+                Consistently practicing Data Structures and Algorithms on
+                LeetCode has become an integral part of my routine. Some days I
+                breeze through problems, while on others, complex challenges
+                push me to think deeper and refine my approach.
+              </p>
+              <p className="text-center text-lg text-gray-600 dark:text-gray-300">
+                I have worked on a wide range of topics including arrays, trees,
+                graphs, and dynamic programming. My objective is to stay
+                consistent, expand my problem-solving skills daily, and approach
+                technical interviews with confidence.
+              </p>
+
+              {/* LeetCode Profile Button */}
+              <div className="mt-6 flex justify-center">
+                <a
+                  href="https://leetcode.com/JaaniRajput/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 hover:scale-105 transition-all"
+                >
+                  <SiLeetcode className="w-5 h-5" /> View Profile
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </SectionBackground>
   );
 }

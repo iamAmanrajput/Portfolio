@@ -1,44 +1,49 @@
-import React from "react";
-import { GraduationCap } from "lucide-react";
+import { GraduationCap, Calendar } from "lucide-react";
 
 interface EducationCardProps {
   degree: string;
   institution: string;
   period: string;
-  score?: string;
+  isLast: boolean;
 }
 
 export function EducationCard({
   degree,
   institution,
   period,
+  isLast,
 }: EducationCardProps) {
   return (
-    <div className="group relative bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-transform duration-300 transform hover:-translate-y-1">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+    <div className="relative group bg-white dark:bg-gray-900 p-4 sm:p-8 rounded-xl shadow-lg hover:shadow-xl border border-gray-300 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400">
+      <div className="relative z-10 flex items-start gap-6">
+        {/* Cap Icon */}
+        <div className="p-3 sm:p-4 bg-blue-100 dark:bg-blue-900 rounded-lg">
+          <GraduationCap className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+        </div>
 
-      {/* Content */}
-      <div className="relative z-10">
-        <div className="flex items-start gap-4 mb-4">
-          {/* Icon */}
-          <div className="p-3 bg-purple-100 dark:bg-purple-900 rounded-lg group-hover:scale-110 transition-transform duration-300">
-            <GraduationCap className="w-6 h-6 text-purple-600 dark:text-purple-400" />
-          </div>
+        {/* Details Section */}
+        <div className="flex-1">
+          <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-gray-100">
+            {degree}
+          </h3>
+          <p className="text-blue-600 dark:text-blue-400 font-medium">
+            {institution}
+          </p>
 
-          {/* Details */}
-          <div>
-            <h3 className="font-semibold mb-1">{degree}</h3>
-            <p className="text-gray-600 dark:text-gray-400 mb-2">
-              {institution}
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
-              <span>{period}</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-gray-400" />
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 mt-3">
+            {/* Period */}
+            <div className="flex items-center gap-1 text-gray-600 dark:text-gray-400">
+              <Calendar className="w-4 h-4" />
+              <span className="text-sm">{period}</span>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Timeline Connector (Hidden for Last Card) */}
+      {!isLast && (
+        <div className="absolute left-[38px] bottom-0 w-[2px] h-10 bg-blue-300 dark:bg-blue-700 transform translate-y-full" />
+      )}
     </div>
   );
 }

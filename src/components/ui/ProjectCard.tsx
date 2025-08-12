@@ -1,12 +1,20 @@
-import React from "react";
-import { ExternalLink, Github } from "lucide-react";
+import { SiGithub } from "react-icons/si";
+import { FaGlobe } from "react-icons/fa";
+import { IconType } from "react-icons";
+
+interface TechStackItem {
+  icon: IconType;
+  name: string;
+  color?: string;
+}
 
 interface ProjectCardProps {
   title: string;
   description: string;
   image: string;
-  link: string;
-  tags: string[];
+  link?: string;
+  github?: string;
+  techStack: TechStackItem[];
 }
 
 export function ProjectCard({
@@ -14,59 +22,78 @@ export function ProjectCard({
   description,
   image,
   link,
-  tags,
+  github,
+  techStack,
 }: ProjectCardProps) {
   return (
-    <div className="relative group">
-      {/* Gradient Background Glow */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-blue-500 rounded-xl blur-xl opacity-30 group-hover:opacity-60 pointer-events-none" />
-
-      {/* Card Content */}
-      <div className="relative bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-transform duration-300">
-        {/* Image Section */}
-        <div className="relative overflow-hidden">
-          <img
-            src={image}
-            alt={title}
-            className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
-          />
-          <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-            {/* External Link */}
-            <a
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-white/20 rounded-full hover:bg-blue-600 hover:scale-110 transition-transform duration-300 ease-in-out shadow-lg"
-            >
-              <ExternalLink className="w-6 h-6 text-white" />
-            </a>
-            {/* GitHub Link */}
-            <a
-              href={`https://github.com/iamAmanrajput/${title.toLowerCase()}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-white/20 rounded-full hover:bg-gray-900 hover:scale-110 transition-transform duration-300 ease-in-out shadow-lg"
-            >
-              <Github className="w-6 h-6 text-white" />
-            </a>
-          </div>
+    <div className="group relative">
+      <div className="relative bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 rounded-2xl shadow-lg overflow-hidden transition duration-300 hover:shadow-blue-500/10">
+        {/* Image */}
+        <div className="relative overflow-hidden p-4 pb-0">
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img
+              src={image}
+              alt={`Screenshot of ${title}`}
+              className="w-full h-full object-cover rounded-lg transform group-hover:scale-105 transition-transform duration-300 ease-in-out"
+            />
+          </a>
         </div>
 
-        {/* Content Section */}
+        {/* Content */}
         <div className="p-6">
-          <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
-            {title}
-          </h3>
-          <p className="text-gray-600 dark:text-gray-400 mb-4">{description}</p>
-          <div className="flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <span
-                key={tag}
-                className="px-4 py-1 text-sm font-medium bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full shadow-sm transform hover:scale-105 transition-transform duration-300"
-              >
-                {tag}
-              </span>
-            ))}
+          {/* Title + Icons */}
+          <div className="flex items-center justify-between mb-2">
+            <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
+              {title}
+            </h3>
+            <div className="flex gap-3">
+              {github && (
+                <a
+                  href={github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full text-gray-600 dark:text-gray-300 hover:bg-blue-600 hover:text-white transition-colors duration-300"
+                >
+                  <SiGithub className="w-6 h-6" />
+                </a>
+              )}
+              {link && (
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full text-gray-600 dark:text-gray-300 hover:bg-blue-600 hover:text-white transition-colors duration-300"
+                >
+                  <FaGlobe className="w-6 h-6" />
+                </a>
+              )}
+            </div>
+          </div>
+
+          {/* Description */}
+          <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">
+            {description}
+          </p>
+
+          {/* Tech Stack Icons with Tooltip */}
+          <div className="flex flex-wrap gap-3 mt-4">
+            {techStack.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <div key={index} className="relative">
+                  <div className="peer p-2 rounded-lg bg-gray-200 dark:bg-gray-800">
+                    <Icon className="w-6 h-6" color={item.color} />
+                  </div>
+                  {/* Tooltip */}
+                  <div
+                    className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-700 text-white text-xs rounded px-2 py-1 
+                        opacity-0 peer-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10"
+                  >
+                    {item.name}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

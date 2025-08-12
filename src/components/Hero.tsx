@@ -1,4 +1,3 @@
-import React from "react";
 import { ArrowDown } from "lucide-react";
 import { Link } from "./Link";
 import { TypeWriter } from "./ui/TypeWriter";
@@ -7,7 +6,12 @@ import { ContactInfo } from "./hero/ContactInfo";
 import { ActionButtons } from "./hero/ActionButtons";
 
 export function Hero() {
-  const roles = ["Full-Stack Developer", "DSA Enthusiast", "Problem Solver"];
+  const roles = [
+    "Full-Stack Developer",
+    "Code Enthusiast",
+    "Problem Solver",
+    "Tech Explorer",
+  ];
 
   return (
     <section
@@ -15,7 +19,7 @@ export function Hero() {
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
       {/* Animated background with particles */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800">
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-slate-100/60 to-blue-50/60 dark:from-black dark:via-gray-950/60 dark:to-slate-950/60">
         <div className="absolute inset-0 bg-grid-pattern opacity-[0.08]" />
         {/* Animated gradient orbs */}
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-400/30 dark:bg-blue-600/30 rounded-full blur-3xl animate-pulse" />
@@ -59,17 +63,14 @@ export function Hero() {
             <img
               src="/assets/Hero-img.PNG"
               alt="Aman Kumar"
-              className="relative w-full max-w-lg mx-auto rounded-full shadow-2xl transform hover:scale-105 transition-transform duration-500 "
+              className="relative w-full max-w-lg mx-auto rounded-full shadow-2xl transform hover:scale-105 transition-transform duration-500"
             />
           </div>
         </div>
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-[-1rem] left-1/2 -translate-x-1/2 animate-bounce">
-          <Link
-            href="#about"
-            className="p-2 rounded-full bg-white/10 dark:bg-gray-800/10 hover:bg-white/20 dark:hover:bg-gray-800/20 transition-colors"
-          >
+          <Link href="#about" className="p-2">
             <ArrowDown className="w-6 h-6 text-gray-600 dark:text-gray-300" />
           </Link>
         </div>
