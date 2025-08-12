@@ -11,9 +11,7 @@ import {
   SiTailwindcss,
   SiRedux,
   SiExpress,
-  SiGraphql,
   SiMongodb,
-  SiPrisma,
   SiCplusplus,
   SiGit,
   SiGithub,
@@ -21,9 +19,8 @@ import {
   SiVite,
   SiVercel,
 } from "react-icons/si";
-import { FaNodeJs, FaPython, FaJava, FaAws } from "react-icons/fa";
+import { FaNodeJs, FaPython } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
-import { IoLogoFirebase } from "react-icons/io5";
 
 const skills = [
   {
