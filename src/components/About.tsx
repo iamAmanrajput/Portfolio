@@ -18,7 +18,7 @@ const aboutSections = [
     icon: Code2,
     title: "What I Do",
     description: [
-      "Develop high-performance web applications using modern frameworks.",
+      "Build fast, scalable web apps with modern frameworks.",
       "Optimize code for efficiency and maintainability.",
       "Engage with open-source and stay updated with industry trends.",
     ],

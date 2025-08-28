@@ -18,6 +18,9 @@ import {
   SiPostman,
   SiVite,
   SiVercel,
+  SiPostgresql,
+  SiMysql,
+  SiPrisma,
 } from "react-icons/si";
 import { FaNodeJs, FaPython } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
@@ -84,6 +87,24 @@ const skills = [
     icon: SiMongodb,
     color: "#47a248",
     url: "https://www.mongodb.com/",
+  },
+  {
+    name: "MySQL",
+    icon: SiMysql,
+    color: "#3E6E93",
+    url: "https://www.mysql.com/",
+  },
+  {
+    name: "Postgresql",
+    icon: SiPostgresql,
+    color: "#336791",
+    url: "https://www.postgresql.org/",
+  },
+  {
+    name: "Prisma",
+    icon: SiPrisma,
+    color: "#186997",
+    url: "https://www.prisma.io/",
   },
   {
     name: "C++",
