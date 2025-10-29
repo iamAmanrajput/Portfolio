@@ -14,7 +14,7 @@ const links = [
     label: "LinkedIn",
   },
   {
-    href: "https://www.instagram.com/jaanirajput_0/",
+    href: "https://www.instagram.com/amansingh.next/",
     icon: <Instagram className="w-6 h-6 text-[#E1306C]" />,
     label: "Instagram",
   },
