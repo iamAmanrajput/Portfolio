@@ -7,6 +7,13 @@ import "slick-carousel/slick/slick-theme.css";
 
 const certifications = [
   {
+    title: "Full Stack Developer Intern",
+    issuer: "Cyberguards Consulting (OPC) Pvt. Ltd.",
+    date: "Aug 2025 - Nov 2025",
+    link: "https://www.linkedin.com/posts/aman-kumar-910843327_internshipcompleted-fullstackdeveloper-webdevelopment-activity-7409818308830658560-OAKa?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFKHLVwBSaKGs5ATGr6cSEXv79goxVIOZ5E",
+    image: "../assets/internship-letter.jpg",
+  },
+  {
     title: "Python Technology",
     issuer: "Deloitte",
     date: "June 2025",
@@ -19,13 +26,6 @@ const certifications = [
     date: "May 2025",
     link: "https://www.linkedin.com/posts/aman-kumar-910843327_webdevelopment-mernstack-techjourney-activity-7329895050031603713-M2qD/",
     image: "../assets/Web-Development.jpg",
-  },
-  {
-    title: "Full Stack Development",
-    issuer: "CodSoft",
-    date: "Nov 2024",
-    link: "https://drive.google.com/file/d/1VuQPScKW2LGWZISzja-iZIqanAEn6uKc/view?pli=1",
-    image: "../assets/CodSoft Internship-1.png",
   },
 ];
 

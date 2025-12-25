@@ -5,11 +5,23 @@ import { ExperienceCard } from "./ui/ExperienceCard";
 const experiences = [
   {
     title: "Full Stack Developer Intern",
-    company: "CodSoft",
-    period: "Jan 2024 - Feb 2024",
+    company: "Cyberguards Consulting (OPC) Pvt. Ltd.",
+    period: "Aug 2025 - Nov 2025",
     description:
-      "Developing and maintaining web applications using MERN stack. Implemented key features that improved user engagement by 40%.",
-    skills: ["React", "Node.js", "MongoDB", "Express.js", "TypeScript"],
+      "Designed, developed, and maintained robust full-stack web applications using the MERN stack. Contributed to core feature development, backend API integration, and performance optimization while adhering to best coding practices.",
+
+    link: "https://cyberguards.in/",
+
+    skills: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "TypeScript",
+      "REST APIs",
+      "Git",
+      "GitHub",
+    ],
   },
 ];
 

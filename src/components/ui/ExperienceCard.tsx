@@ -6,6 +6,7 @@ interface ExperienceCardProps {
   period: string;
   description: string;
   skills: string[];
+  link: string;
 }
 
 export function ExperienceCard({
@@ -14,6 +15,7 @@ export function ExperienceCard({
   period,
   description,
   skills,
+  link,
 }: ExperienceCardProps) {
   return (
     <div className="relative group pl-6 sm:pl-10">
@@ -32,9 +34,13 @@ export function ExperienceCard({
               <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
                 {title}
               </h3>
-              <p className="text-base text-blue-600 dark:text-blue-400">
+              <a
+                href={link}
+                target="_blank"
+                className="text-base text-blue-600 dark:text-blue-400"
+              >
                 {company}
-              </p>
+              </a>
               <p className="text-sm text-gray-500 dark:text-gray-400">
                 {period}
               </p>
