@@ -51,7 +51,7 @@ export function About() {
     <SectionBackground>
       <section id="about">
         <div className="container mx-auto px-6">
-          <SectionTitle subtitle="Just a curious developer who loves turning ideas into reality (and debugging at 2 AM)">
+          <SectionTitle subtitle="Just a curious developer who loves turning ideas into reality">
             About Me
           </SectionTitle>
 

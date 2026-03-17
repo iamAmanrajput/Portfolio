@@ -74,22 +74,7 @@ const projects = [
       techStacks.shadcn,
     ],
   },
-  {
-    title: "ZapChat",
-    description:
-      "Real-time chat app using MERN and WebSockets with one-to-one/group chats, read receipts, and dark UI. Delivers fast and smooth messaging across devices.",
-    image: "/assets/ZapChat.png",
-    link: "https://zapchats.vercel.app/",
-    github: "https://github.com/iamAmanrajput/ZapChat",
-    techStack: [
-      techStacks.react,
-      techStacks.node,
-      techStacks.express,
-      techStacks.mongodb,
-      techStacks.socket,
-      techStacks.tailwind,
-    ],
-  },
+
   {
     title: "Portfolio",
     description:
@@ -102,21 +87,6 @@ const projects = [
       techStacks.tailwind,
       techStacks.framer,
       techStacks.typescript,
-    ],
-  },
-  {
-    title: "CourseNest",
-    description:
-      "MERN-based platform for buying and selling online courses. Features secure payments, easy course browsing, and responsive layouts for a smooth user experience.",
-    image: "/assets/CourseNest.png",
-    link: "https://coursenest.vercel.app/",
-    github: "https://github.com/iamAmanrajput/CourseNest",
-    techStack: [
-      techStacks.react,
-      techStacks.node,
-      techStacks.express,
-      techStacks.mongodb,
-      techStacks.tailwind,
     ],
   },
 ];
