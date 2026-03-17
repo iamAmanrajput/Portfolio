@@ -45,7 +45,7 @@ const projects = [
       "MERN-based library management portal with book tracking, automated fine calculation, and queue handling. Integrated with Razorpay for online payments and built with a responsive UI.",
     image: "/assets/nexlib.png",
     link: "https://nexlib.in/",
-    github: "https://github.com/iamAmanrajput/BooksNest",
+    github: "https://github.com/iamAmanrajput/Nexlib",
     techStack: [
       techStacks.react,
       techStacks.node,
