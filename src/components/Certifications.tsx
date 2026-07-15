@@ -7,11 +7,11 @@ import "slick-carousel/slick/slick-theme.css";
 
 const certifications = [
   {
-    title: "Full Stack Developer Intern",
-    issuer: "Cyberguards Consulting (OPC) Pvt. Ltd.",
-    date: "Aug 2025 - Nov 2025",
-    link: "https://www.linkedin.com/posts/aman-kumar-910843327_internshipcompleted-fullstackdeveloper-webdevelopment-activity-7409818308830658560-OAKa?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFKHLVwBSaKGs5ATGr6cSEXv79goxVIOZ5E",
-    image: "../assets/internship-letter.jpg",
+    title: "Full Stack Generative and Agentic AI with Python",
+    issuer: "Udemy",
+    date: "April 2026",
+    link: "https://www.udemy.com/certificate/UC-5a8e1fcc-c412-4d53-b58f-cd7bdc8ee5da/",
+    image: "../assets/genai-udemy.jpg",
   },
   {
     title: "Python Technology",

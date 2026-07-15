@@ -34,7 +34,7 @@ function App() {
         <Projects />
         <GitHub />
         <Leetcode />
-        <Experience />
+        {/* <Experience /> */}
         <Certifications />
         <Education />
         <Contact />
