@@ -17,6 +17,9 @@ import {
   SiAppwrite,
   SiExpress,
   SiRazorpay,
+  SiConvex,
+  SiClerk,
+  SiRedux,
 } from "react-icons/si";
 
 // Define reusable tech stack icons & colors
@@ -36,13 +39,33 @@ const techStacks = {
   appwrite: { icon: SiAppwrite, name: "Appwrite", color: "#ff3d00" },
   express: { icon: SiExpress, name: "Express", color: "#10b981" },
   razorpay: { icon: SiRazorpay, name: "RazorPay", color: "#00cfff" },
+  convex: { icon: SiConvex, name: "Convex", color: "#F9F9F9" },
+  clerk: { icon: SiClerk, name: "Clerk", color: "#6C47FF" },
+  redux: { icon: SiRedux, name: "Redux", color: "#764ABC" },
 };
 
 const projects = [
   {
+    title: "AgentSupport",
+    description:
+      "AgentSupport is a multi-tenant AI-powered customer support platform that enables businesses to add an AI chat widget to their websites using a simple script tag. It uses RAG-based knowledge bases to provide context-aware responses and supports seamless human handoff through an operator dashboard.",
+    image: "/assets/agentsupport.png",
+    link: "https://agentsupport.me/",
+    github: "https://github.com/iamAmanrajput/AgentSupport",
+    techStack: [
+      techStacks.next,
+      techStacks.typescript,
+      techStacks.convex,
+      techStacks.clerk,
+      techStacks.redux,
+      techStacks.tailwind,
+      techStacks.shadcn,
+    ],
+  },
+  {
     title: "NexLib",
     description:
-      "MERN-based library management portal with book tracking, automated fine calculation, and queue handling. Integrated with Razorpay for online payments and built with a responsive UI.",
+      "Full-stack library management system for handling books, users, borrowing, queues, reviews, and library analytics. Includes separate user and admin portals, JWT authentication, automated email notifications, wishlist management, and responsive UI with Redux-powered state management.",
     image: "/assets/nexlib.png",
     link: "https://nexlib.in/",
     github: "https://github.com/iamAmanrajput/Nexlib",
@@ -57,10 +80,11 @@ const projects = [
       techStacks.framer,
     ],
   },
+
   {
     title: "NeoMart",
     description:
-      "Full-featured MERN e-commerce platform with secure payments, product filtering, cart management, and an admin panel for store operations. Designed with a responsive modern UI.",
+      "Full-stack e-commerce platform with secure authentication, product search and filtering, persistent cart, wishlist, reviews, order tracking, and Razorpay payments. Includes a complete admin dashboard for managing products, orders, users, analytics, and Cloudinary-based image uploads with a responsive modern UI.",
     image: "/assets/NeoMart.png",
     link: "https://neomarts.vercel.app/",
     github: "https://github.com/iamAmanrajput/NeoMart",
@@ -78,7 +102,7 @@ const projects = [
   {
     title: "Portfolio",
     description:
-      "Personal portfolio with project showcase, animated transitions, and responsive design. Built to present my skills and make it easy for recruiters to connect.",
+      "Personal developer portfolio showcasing projects, technical skills, experience, and contact information through a modern responsive interface. Built with React and TypeScript, featuring smooth animations, interactive sections, and a clean design focused on presenting work professionally to recruiters.",
     image: "/assets/Portfolio.png",
     link: "https://aman-rajput.vercel.app/",
     github: "https://github.com/iamAmanrajput/Portfolio",
@@ -94,13 +118,13 @@ const projects = [
 export function Projects() {
   return (
     <SectionBackground>
-      <section id="projects">
-        <div className="container mx-auto px-8">
+      <section id='projects'>
+        <div className='container mx-auto px-8'>
           <SectionTitle subtitle="My code babies - they're not perfect, but they're mine and I love them">
             Projects
           </SectionTitle>
 
-          <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className='max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
             {projects.map((project) => (
               <ProjectCard key={project.title} {...project} />
             ))}
